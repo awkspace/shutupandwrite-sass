@@ -1,0 +1,36 @@
+$light:       #F2F2F2;
+$darker:      #DDDDDD;
+
+$dark:        #333333;
+$lighter:     #808080;
+
+$neutral:     #AAAAAA;
+
+$accent:      #33B5E5;
+$accent-dark: #0099CC;
+
+$alert-dark:  #FF8800;
+
+@import "../common";
+
+div#header-bottom-left {
+  background-color: #0F0F0F;
+}
+
+/* Hide "shutupandwrite" */
+.pagename {
+  visibility: hidden;
+}
+
+/* Preserve subreddit link as overlay */
+.pagename a {
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 100px;
+  visibility: visible;
+  color: $light;
+  font-size: 1px !important;
+  width: 190px !important;
+  height: 150px !important;
+}

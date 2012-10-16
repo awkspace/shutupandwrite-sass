@@ -1,0 +1,45 @@
+/* Set header background */
+div#header-bottom-left {
+  background-color: $dark;
+}
+
+div#header {
+
+  /* Get rid of the thin blue line */
+  border: none;
+  
+  /* Tabs */
+  ul.tabmenu {
+    padding-bottom: 15px;
+    font-family: 'DejaVu Sans', 'Arial', sans-serif;
+    
+    li {
+      
+      a {
+	background: none;
+	color: $light;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 15px;
+	padding-bottom: 11px;
+	
+	&:hover {
+	  border-bottom: 4px solid $lighter;
+	}
+      }
+      
+      &.selected a {
+	background: none;
+	color: $light;
+	text-transform: uppercase;
+	border: none;
+	font-weight: bold;
+	padding-bottom: 11px;
+	border-bottom: 4px solid $accent;
+      }
+    }
+    
+    
+  }
+  
+}

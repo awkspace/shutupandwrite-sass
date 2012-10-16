@@ -1,0 +1,38 @@
+div.content {
+  margin-top: 50px;
+}
+
+div#siteTable {
+
+  div.thing {
+
+    div.entry {
+    
+      p.title {
+
+	/* Link flair */
+	span.linkflairlabel {
+	  width: 80px;
+	  background: $darker;
+	  color: $dark;
+	  text-align: center;
+	  padding: 2px;
+	  border: none;
+	  -moz-border-radius: 0px;
+	  -webkit-border-radius: 0px;
+	  border-radius: 0px;
+	  vertical-align: bottom;      
+	}
+	
+	/* Change visited link color */
+	&:visited, &.loggedin:visited, &.loggedin.click:visited {
+	  color: darken($lighter, 20%) !important;
+	}
+      
+      }
+      
+    }
+    
+  }
+
+}
