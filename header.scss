@@ -1,12 +1,18 @@
-/* Set header background */
 div#header-bottom-left {
+  /* Set header background */
   background-color: $dark;
+
+  /* Fix spacing issues with subreddit title */
+  span.pagename {
+    display: inline-block;
+  }
+  
 }
 
 div#header {
 
   /* Get rid of the thin blue line */
-  border: none;
+  border: none;  
   
   /* Tabs */
   ul.tabmenu {
