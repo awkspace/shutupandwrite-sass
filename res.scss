@@ -10,14 +10,14 @@
     font-weight: 300 !important;
     font-size: 13px !important;
     background-image: none !important;
-    background-color: $dark !important;
+    background-color: $darker !important;
     border: none !important;
-    border-left: 6px solid $lighter !important;
+    border-left: 6px solid $dark !important;
     border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     -webkit-border-radius: 0 !important;
     display: block !important;
-    color: $light !important;
+    color: $lightest !important;
     position: relative !important;
     padding: 4px 8px 6px 8px !important;
     margin-bottom: 5px !important;
@@ -27,14 +27,14 @@
     }
     
     &:hover {
-      color: $accent !important;
+      color: $accent-light !important;
     }
     
     &.remove {
       background-image: none !important;
-      color: $dark !important;
-      background-color: $light !important;
-      border-left: 6px solid $accent !important;
+      color: $darker !important;
+      background-color: $lightest !important;
+      border-left: 6px solid $accent-light !important;
     }
     
 }
@@ -46,7 +46,7 @@ div.entry span.newComments {
 
 /* Selected link & comment styles */
 .keyHighlight {
-  background-color: $light !important;
+  background-color: $lightest !important;
   outline: none !important;
   border: none !important;
 }

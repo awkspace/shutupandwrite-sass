@@ -13,8 +13,8 @@ div#siteTable {
 	/* Link flair */
 	span.linkflairlabel {
 	  width: 80px;
-	  background: $darker;
-	  color: $dark;
+	  background: $lighter;
+	  color: $darker;
 	  text-align: center;
 	  padding: 2px;
 	  border: none;
@@ -31,7 +31,7 @@ div#siteTable {
 	
 	/* Change visited link color */
 	a.title:visited {
-	  color: darken($lighter, 20%) !important;
+	  color: darken($dark, 20%) !important;
 	}
       
       }

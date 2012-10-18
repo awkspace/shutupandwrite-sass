@@ -11,9 +11,9 @@ div.side {
   
   /* Post info */
   div.linkinfo {
-    background-color: $light;
+    background-color: $lightest;
     border: none;
-    border-left: 6px solid $neutral;
+    border-left: 6px solid $light;
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px;
@@ -23,7 +23,7 @@ div.side {
     }
     
     .downvotes {
-      color: $dark;
+      color: $darker;
     }
     
   }
@@ -72,7 +72,7 @@ div.side {
 	}
 	
 	&:hover {
-	  color: $accent;
+	  color: $accent-light;
 	}
 	
 	&.active {
@@ -83,9 +83,9 @@ div.side {
       
       /* If unsubscribed */
       a.add {
-	color: $light;
-	background-color: $dark;
-	border-left: 6px solid $lighter;
+	color: $lightest;
+	background-color: $darker;
+	border-left: 6px solid $dark;
 	
 	&:before {
 	  content: "+";
@@ -95,9 +95,9 @@ div.side {
       
       /* If subscribed */
       a.remove {
-	color: $dark;
-	background-color: $light;
-	border-left: 6px solid $accent;
+	color: $darker;
+	background-color: $lightest;
+	border-left: 6px solid $accent-light;
 	
 	&:before {
 	  content: "-";
@@ -148,9 +148,9 @@ div.side {
 
      /* Moderator box */
     div.leavemoderator {
-      color: $dark;
-      background: $light;
-      border-left: 6px solid $accent;
+      color: $darker;
+      background: $lightest;
+      border-left: 6px solid $accent-light;
       padding: 5px 0px 5px 5px;
       margin-bottom: 5px;
       line-height: 10px;
@@ -163,17 +163,17 @@ div.side {
     
     /* Flair toggle box */
     form.flairtoggle {
-      color: $dark;
-      background: $light;
-      border-left: 6px solid $accent;
+      color: $darker;
+      background: $lightest;
+      border-left: 6px solid $accent-light;
       padding: 5px 0px 5px 5px;
       line-height: 10px;
     }
     
     /* Flair preview box */
     div.tagline {
-      background: $light;
-      border-left: 6px solid $accent;
+      background: $lightest;
+      border-left: 6px solid $accent-light;
       padding: 5px 0px 5px 5px;
       margin: 0px;
       margin-bottom: 7px;
@@ -193,11 +193,11 @@ div.side {
 	  position: absolute;
 	  top: 117px;
 	  left: 0px;
-	  background-color: $light;
-	  color: $dark;
+	  background-color: $lightest;
+	  color: $darker;
 	  margin: 15px;
 	  padding: 7px 7px 7px 13px;
-	  border-left: 6px solid $lighter;
+	  border-left: 6px solid $dark;
 	  font-weight: normal;
 	  text-align: left;
 	  width: 56%;
@@ -211,19 +211,19 @@ div.side {
 	    
 	  li {
 	    width: 274px;
-	    background-color: $light;
+	    background-color: $lightest;
 	    border: none;
 	    color: black;
 	    display: none;
 	    padding: 7px 7px 9px 13px;
 	    margin: 0 0 -1px 0;
 	    text-align: left;
-	    border-top: 1px solid lighten($neutral, 10%);
-	    border-left: 6px solid $darker;
+	    border-top: 1px solid lighten($light, 10%);
+	    border-left: 6px solid $lighter;
 	    line-height: 16px;
 
 	    &:hover {
-	      background-color: $darker;
+	      background-color: $lighter;
 	    }
 	    
 	    a:hover {
@@ -231,10 +231,10 @@ div.side {
 	    }
 	    
 	    &:first-child {
-	      background-color: $dark;
-	      color: $light;
+	      background-color: $darker;
+	      color: $lightest;
 	      display: inline-block;
-	      border-left: 6px solid $lighter;
+	      border-left: 6px solid $dark;
 	      border-top: none;
 	      font-size: 15px;
 	      padding: 8px 12px 9px 8px;
@@ -244,9 +244,9 @@ div.side {
 	      }
 	      
 	      &:hover {
-		border-left: 6px solid $accent;
-		background-color: $light;
-		color: $dark;
+		border-left: 6px solid $accent-light;
+		background-color: $lightest;
+		color: $darker;
 	      }
 	      
 	    }
@@ -288,14 +288,14 @@ div.side {
 	h1 {
 	  display: inline-block;
 	  width: 284px;
-	  border-left: 6px solid $lighter;
+	  border-left: 6px solid $dark;
 	  text-align: left;
-	  background-color: $dark;
+	  background-color: $darker;
 	  font-size: 15px;
 	  letter-spacing: 0px;
 	  padding: 2px;
 	  padding-left: 8px;
-	  color: $light;
+	  color: $lightest;
 	  text-transform: lowercase;
 	  line-height: 27px;
 
@@ -322,7 +322,7 @@ div.side {
       ul.content {
 	padding: 5px;
 	border: none;
-	background-color: $light;
+	background-color: $lightest;
 	
 	ul.icon-menu {
 
@@ -335,15 +335,15 @@ div.side {
       }
       
       a.helplink {
-	color: $neutral !important;
+	color: $light !important;
 	position: relative;
 	top: 22px;
 	right: 6px;
 	padding-left: 4px;
 	
 	&:hover {
-	  color: $light !important;
-	  border-left: 4px solid $accent;
+	  color: $lightest !important;
+	  border-left: 4px solid $accent-light;
 	}
 	 
       }
@@ -353,9 +353,9 @@ div.side {
     /* Link & community buttons */
     div.morelink {
       border: none;
-      border-left: 6px solid $lighter;
+      border-left: 6px solid $dark;
       text-align: left;
-      background-color: $dark;
+      background-color: $darker;
       background-image: none;
       height: 31px;
       font-weight: normal;
@@ -363,17 +363,17 @@ div.side {
       a {
 	letter-spacing: 0px;
 	padding-left: 8px;
-	color: $light;
+	color: $lightest;
 	width: 280px !important;
       }
       
       &:hover {
 	background-image: none;
-	border-left: 6px solid $accent;
-	background-color: $light;
+	border-left: 6px solid $accent-light;
+	background-color: $lightest;
 	
 	a {
-	  color: $dark;
+	  color: $darker;
 	}
 	
       }

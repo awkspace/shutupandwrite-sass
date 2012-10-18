@@ -1,19 +1,19 @@
-$light:       #F2F2F2;
-$darker:      #DDDDDD;
+$light:        #AAAAAA;
+$lighter:      #DDDDDD;
+$lightest:     #F2F2F2;
 
-$dark:        #333333;
-$lighter:     #808080;
+$dark:         #808080;
+$darker:       #333333;
+$darkest:      #0F0F0F;
 
-$neutral:     #AAAAAA;
-
-$accent:      #99CC00;
-$accent-dark: #669900;
+$accent-light: #99CC00;
+$accent-dark:  #669900;
 
 $alert-dark:  #FF8800;
 
 @import "../common";
 
 .pagename, .pagename a {
- color: $light;
+ color: $lightest;
  font-size: 24px;
 }

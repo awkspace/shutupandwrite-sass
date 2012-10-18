@@ -1,6 +1,6 @@
 div#header-bottom-left {
   /* Set header background */
-  background-color: $dark;
+  background-color: $darker;
 
   /* Fix spacing issues with subreddit title */
   span.pagename {
@@ -23,25 +23,25 @@ div#header {
       
       a {
 	background: none;
-	color: $light;
+	color: $lightest;
 	text-transform: uppercase;
 	font-weight: bold;
 	padding: 15px;
 	padding-bottom: 11px;
 	
 	&:hover {
-	  border-bottom: 4px solid $lighter;
+	  border-bottom: 4px solid $dark;
 	}
       }
       
       &.selected a {
 	background: none;
-	color: $light;
+	color: $lightest;
 	text-transform: uppercase;
 	border: none;
 	font-weight: bold;
 	padding-bottom: 11px;
-	border-bottom: 4px solid $accent;
+	border-bottom: 4px solid $accent-light;
       }
     }
     

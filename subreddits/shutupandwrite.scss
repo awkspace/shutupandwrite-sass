@@ -1,15 +1,15 @@
-$light:       #F2F2F2;
-$darker:      #DDDDDD;
+$light:        #AAAAAA;
+$lighter:      #DDDDDD;
+$lightest:     #F2F2F2;
 
-$dark:        #333333;
-$lighter:     #808080;
+$dark:         #808080;
+$darker:       #333333;
+$darkest:      #0F0F0F;
 
-$neutral:     #AAAAAA;
+$accent-light: #33B5E5;
+$accent-dark:  #0099CC;
 
-$accent:      #33B5E5;
-$accent-dark: #0099CC;
-
-$alert-dark:  #FF8800;
+$alert-dark:   #FF8800;
 
 @import "../common";
 
