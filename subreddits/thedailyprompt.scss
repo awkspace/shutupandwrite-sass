@@ -9,7 +9,7 @@ $darkest:      #0F0F0F;
 $accent-light: #99CC00;
 $accent-dark:  #669900;
 
-$alert-dark:  #FF8800;
+$alert-dark:   #FF8800;
 
 @import "../common";
 
@@ -18,3 +18,7 @@ $alert-dark:  #FF8800;
  font-size: 24px;
 }
 
+/* Highlight prompt suggestion threads */
+div#siteTable div.thing div.entry p.title a.title[href*="the_daily_prompt_suggestions_for"] {
+  color: $accent-dark !important;
+}
