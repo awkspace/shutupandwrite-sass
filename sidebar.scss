@@ -71,10 +71,6 @@ div.side {
 	  letter-spacing: .5em;
 	}
 	
-	&:hover {
-	  color: $accent-light;
-	}
-	
 	&.active {
 	  display: inline-block;
 	}
@@ -91,6 +87,10 @@ div.side {
 	  content: "+";
 	}
 	
+	&:hover {
+	  color: $accent-light;
+	}
+		
       }
       
       /* If subscribed */
@@ -101,6 +101,10 @@ div.side {
 	
 	&:before {
 	  content: "-";
+	}
+  
+  	&:hover {
+	  color: $accent-dark;
 	}
   
       }

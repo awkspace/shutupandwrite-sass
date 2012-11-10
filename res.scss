@@ -35,6 +35,11 @@
       color: $darker !important;
       background-color: $lightest !important;
       border-left: 6px solid $accent-light !important;
+      
+      &:hover {
+	color: $accent-dark !important;
+      }
+      
     }
     
 }
