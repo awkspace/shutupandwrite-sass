@@ -2,7 +2,11 @@ div.side {
 
   /* Search box */
   form#search {
-
+    
+    /* Overlap the second invisible table cell of announcement bar */
+    position: relative;
+    z-index: 1;
+    
     input {
       text-align: center;
     }
@@ -192,20 +196,30 @@ div.side {
 	overflow: hidden !important;
 	
 	/* Announcement bar */
-	h3:nth-of-type(1) {
-	  display: block;
+	table {
+	  width: 100%;
 	  position: absolute;
-	  top: 117px;
+	  top: 127px;
 	  left: 0px;
+	  
+	  th {
 	  background-color: $lightest;
-	  color: $darker;
-	  margin: 15px;
-	  padding: 7px 7px 7px 13px;
-	  border-left: 6px solid $dark;
-	  font-weight: normal;
-	  text-align: left;
-	  width: 56%;
-	  line-height: 15px;
+	    color: $darker;
+	    margin: 15px;
+	    padding: 7px 7px 7px 13px;
+	    border-left: 6px solid $dark;
+	    font-weight: normal;
+	    text-align: left;
+	    line-height: 15px;
+	  }
+	  
+	  th+th {
+	    width: 320px;
+	    border: none;
+	    padding: 0px;
+	    background: none;
+	  }
+	  
 	}
 	
 	/* Lists */
