@@ -222,6 +222,20 @@ div.side {
 	  
 	}
 	
+	/* Categories v1.0 */
+	h3 {
+	  font-family: 'DejaVu Sans', 'Arial', sans-serif;
+	  display: block;
+	  position: absolute;
+	  top: 40px;
+	  left: 310px;
+	  background-color: $lightest;
+	  z-index: 99;
+	  padding: 7px;
+	  font-weight: normal;
+	  box-shadow: 0px 0px 10px $accent-light;
+	}
+	
 	/* Lists */
 	ul {
 	  margin: 0 0 7px 0;
