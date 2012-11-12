@@ -279,6 +279,15 @@ div.side {
 		border-left: 6px solid $accent-light;
 		background-color: $lightest;
 		color: $darker;
+		
+		a {
+		  color: #336699;
+		}
+		
+	      }
+	      
+	      a {
+		color: $lightest;
 	      }
 	      
 	    }
