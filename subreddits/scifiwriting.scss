@@ -14,6 +14,95 @@ $alert-dark:   #FF8800;
 @import "../common";
 
 .pagename, .pagename a {
- color: $lightest;
- font-size: 24px;
+	color: $lightest;
+	font-size: 24px;
 }
+
+/* Set readers/users to custom names */
+div.titlebox {
+
+	.subscribers {
+
+		span.word {  
+			display: none;
+		}
+
+		span.number:after {  
+			content: " robot writers";  
+			font-size: 12px;
+			font-weight: normal;
+		}
+		
+	}
+
+	.users-online {
+	
+		span.word {  
+			display: none;
+		}
+
+		span.number:after {  
+			content: " aliens among us";
+			font-size: 12px;
+			font-weight: normal;
+		}
+		
+	}
+	
+}
+
+
+/* Custom CSS for random quotes, may later be integrated with common.scss if it's sexy enough */
+input[name="uh"] ~ a::after,.user::before {
+	position: absolute;
+	top: 5px;
+	right: 450px;
+	width: 550px;
+	color: $accent-light;
+	font-size: 14px;
+	font-family: 'Georgia', sans-serif;
+	font-style: italic;
+	line-height: 18px;
+	text-align: center;
+}
+
+.user::before {
+	z-index:10;
+	content: " ";
+	top: 1px;
+	height: 100px;
+}
+
+/* Make sure random quotes works for non-RES users */
+#header-bottom-right {
+	height: 14px;
+	position: absolute;
+	top: 18px;
+	padding: 4px 10px;
+	border-radius: 0;
+}
+
+/* Undo element height change for RES users */
+.res-navTop {
+	height: 20px !important;
+}
+
+/* Quotes. At the moment, a maximum of 36 is supported. */
+input[name="uh"][value^="0"] ~ a::after, input[name="uh"][value^="1"] ~ a::after { content: "“We all know interspecies romance is weird.” ― Tim Burton"; }
+input[name="uh"][value^="2"] ~ a::after, input[name="uh"][value^="3"] ~ a::after { content: "“If you're going to make a science fiction movie, then have a hover craft chase, for God's sake.”  ― Joss Whedon"; }
+input[name="uh"][value^="4"] ~ a::after, input[name="uh"][value^="5"] ~ a::after { content: "“Anything you dream is fiction, and anything you accomplish is science, the whole history of mankind is nothing but science fiction.” ― Ray Bradbury"; }
+input[name="uh"][value^="6"] ~ a::after, input[name="uh"][value^="7"] ~ a::after { content: "“Here's a quick rule of thumb: Don't annoy science fiction writers. These are people who destroy entire planets before lunch. Think of what they'll do to you.” ― John Scalzi"; }
+input[name="uh"][value^="8"] ~ a::after, input[name="uh"][value^="9"] ~ a::after { content: "“Science fiction at its best should be crazy and dangerous, not sane and safe.” ― Paul Di Filippo"; }
+input[name="uh"][value^="z"] ~ a::after, input[name="uh"][value^="a"] ~ a::after { content: "“Everything is becoming science fiction. From the margins of an almost invisible literature has sprung the intact reality of the 20th century.” ― J.G. Ballard"; }
+input[name="uh"][value^="b"] ~ a::after, input[name="uh"][value^="c"] ~ a::after { content: "“Science fiction is the most important literature in the history of the world, because it's the history of ideas, the history of our civilization birthing itself.” ― Ray Bradbury"; }
+input[name="uh"][value^="d"] ~ a::after, input[name="uh"][value^="e"] ~ a::after { content: "“Individual science fiction stories may seem as trivial as ever to the blinder critics and philosophers of today, but the core of science fiction -- its essence -- has become crucial to our salvation, if we are to be saved at all.” ― Isaac Asimov"; }
+input[name="uh"][value^="f"] ~ a::after, input[name="uh"][value^="g"] ~ a::after { content: "“Science fiction deals with improbable possibilities, fantasy with plausible impossibilities.” ― Miriam Allen de Ford"; }
+input[name="uh"][value^="h"] ~ a::after, input[name="uh"][value^="i"] ~ a::after { content: "“Science Fiction has rivets, fantasy has trees.” ― Orson Scott Card"; }
+input[name="uh"][value^="j"] ~ a::after, input[name="uh"][value^="k"] ~ a::after { content: "“Science fiction is the fiction of ideas... As soon as you have an idea that changes some small part of the world you are writing science fiction. It is always the art of the possible, never the impossible.” ― Ray Bradbury"; }
+input[name="uh"][value^="l"] ~ a::after, input[name="uh"][value^="m"] ~ a::after { content: "“Science is my territory, but science fiction is the landscape of my dreams.” ― Freeman Dyson, Imagined Worlds"; }
+input[name="uh"][value^="n"] ~ a::after, input[name="uh"][value^="o"] ~ a::after { content: "“But if the general opinion of Mankind is optimistic then we're in for a period of extreme popularity for science fiction. If the general opinion is pessimistic, fantasy is going to hold its own.” ― David Eddings"; }
+input[name="uh"][value^="p"] ~ a::after, input[name="uh"][value^="q"] ~ a::after { content: "“Science fiction, outside of poetry, is the only literary field which has no limits, no parameters whatsoever.” ― Theodore Sturgeon"; }
+input[name="uh"][value^="r"] ~ a::after, input[name="uh"][value^="s"] ~ a::after { content: "“A realist writer might break his protagonist's leg, or kill his fiancee; but a science fiction writer will immolate whole planets, and whilst doing so he will be more concerned with the placement of commas than the screams of the dying.” ― Adam Roberts"; }
+input[name="uh"][value^="t"] ~ a::after, input[name="uh"][value^="u"] ~ a::after { content: "“Science fiction was always about the period in which it was written.” ― William Gibson"; }
+input[name="uh"][value^="v"] ~ a::after, input[name="uh"][value^="w"] ~ a::after { content: "“General fiction is pretty much about ways that people get into problems and screw their lives up. Science fiction is about everything else.” ― Marvin Minsky"; }
+input[name="uh"][value^="x"] ~ a::after, input[name="uh"][value^="y"] ~ a::after { content: "“Fantasy and science fiction can be literal as well as allegorical and there’s nothing wrong with enjoying a monster like a giant squid for what it is, as well as searching for metaphor.” ― China Miéville"; }
