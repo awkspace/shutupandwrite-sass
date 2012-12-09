@@ -72,11 +72,11 @@ div.side {
 			-webkit-border-radius: 0;
 		
 			&:first-letter {
-			letter-spacing: .5em;
+				letter-spacing: .5em;
 			}
 			
 			&.active {
-			display: inline-block;
+				display: inline-block;
 			}
 
 		}
@@ -203,7 +203,7 @@ div.side {
 					left: 0px;
 					
 					th {
-					background-color: $lightest;
+						background-color: $lightest;
 						color: $darker;
 						margin: 15px;
 						padding: 7px 7px 7px 13px;
