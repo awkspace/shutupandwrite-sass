@@ -1,0 +1,14 @@
+@mixin no-rounded-corners {
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+
+@mixin bordered-box($border, $background, $color) {
+	background-image: none;
+	background-color: $background;
+	border: none;
+	border-left: 6px solid $border;
+	color: $color;
+	@include no-rounded-corners;
+}

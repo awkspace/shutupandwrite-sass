@@ -15,12 +15,7 @@ div.side {
 	
 	/* Post info */
 	div.linkinfo {
-		background-color: $lightest;
-		border: none;
-		border-left: 6px solid $light;
-		-moz-border-radius: 0px;
-		-webkit-border-radius: 0px;
-		border-radius: 0px;
+		@include bordered-box($light, $lightest, $darkest);
 		
 		.upvotes {
 			color: $accent-dark;
@@ -49,19 +44,15 @@ div.side {
 			
 			/* General style */
 			a.option {
+				@include bordered-box($dark, $darker, $lightest);
 				width: 278px;
 				text-align: left;
 				margin: 0;
 				padding: 4px 8px 6px 8px;
 				line-height: 14px;
 				height: 14px;
-				background-image: none;
 				font-weight: normal;
 				font-size: 12px;
-				border: none;
-				border-radius: 0;
-				-moz-border-radius: 0;
-				-webkit-border-radius: 0;
 			
 				&:first-letter {
 					letter-spacing: .5em;
@@ -75,9 +66,6 @@ div.side {
 			
 			/* If unsubscribed */
 			a.add {
-				color: $lightest;
-				background-color: $darker;
-				border-left: 6px solid $dark;
 			
 				&:before {
 					content: "+";
@@ -91,9 +79,7 @@ div.side {
 		
 			/* If subscribed */
 			a.remove {
-				color: $darker;
-				background-color: $lightest;
-				border-left: 6px solid $accent-light;
+				@include bordered-box($accent-light, $lightest, $darker);
 			
 				&:before {
 					content: "-";
@@ -148,9 +134,7 @@ div.side {
 
 		/* Moderator box */
 		div.leavemoderator {
-			color: $darker;
-			background: $lightest;
-			border-left: 6px solid $accent-light;
+			@include bordered-box($accent-light, $lightest, $darker);
 			padding: 5px 0px 5px 5px;
 			margin-bottom: 5px;
 			line-height: 10px;
@@ -163,17 +147,14 @@ div.side {
 		
 		/* Flair toggle box */
 		form.flairtoggle {
-			color: $darker;
-			background: $lightest;
-			border-left: 6px solid $accent-light;
+			@include bordered-box($accent-light, $lightest, $darker);
 			padding: 5px 0px 5px 5px;
 			line-height: 10px;
 		}
 		
 		/* Flair preview box */
 		div.tagline {
-			background: $lightest;
-			border-left: 6px solid $accent-light;
+			@include bordered-box($accent-light, $lightest, $darker);
 			padding: 5px 0px 5px 5px;
 			margin: 0px;
 			margin-bottom: 7px;
@@ -197,11 +178,9 @@ div.side {
 						left: 0px;
 						
 						th {
-							background-color: $lightest;
-							color: $darker;
+							@include bordered-box($dark, $lightest, $darker);
 							margin: 15px;
 							padding: 7px 7px 7px 13px;
-							border-left: 6px solid $dark;
 							font-weight: normal;
 							text-align: left;
 							line-height: 15px;
@@ -224,16 +203,14 @@ div.side {
 					line-height: 20px;
 						
 					li {
+						@include bordered-box($light, $lightest, $darker);
+						border-top: 1px solid lighten($light, 10%);
+						border-left: 6px solid $lighter;
 						width: 274px;
-						background-color: $lightest;
-						border: none;
-						color: black;
 						display: none;
 						padding: 7px 7px 9px 13px;
 						margin: 0 0 -1px 0;
 						text-align: left;
-						border-top: 1px solid lighten($light, 10%);
-						border-left: 6px solid $lighter;
 						line-height: 16px;
 
 						&:hover {
@@ -245,11 +222,8 @@ div.side {
 						}
 						
 						&:first-child {
-							background-color: $darker;
-							color: $lightest;
+							@include bordered-box($dark, $darker, $lightest);
 							display: inline-block;
-							border-left: 6px solid $dark;
-							border-top: none;
 							font-size: 15px;
 							padding: 8px 12px 9px 8px;
 
@@ -258,10 +232,8 @@ div.side {
 							}
 							
 							&:hover {
-								border-left: 6px solid $accent-light;
-								background-color: $lightest;
-								color: $darker;
-					
+								@include bordered-box($accent-light, $lightest, $darker);
+				
 								a {
 									color: #336699;
 								}
@@ -309,16 +281,14 @@ div.side {
 			div.title {
 	
 				h1 {
+					@include bordered-box($dark, $darker, $lightest);
 					display: inline-block;
 					width: 284px;
-					border-left: 6px solid $dark;
 					text-align: left;
-					background-color: $darker;
 					font-size: 15px;
 					letter-spacing: 0px;
 					padding: 2px;
 					padding-left: 8px;
-					color: $lightest;
 					text-transform: lowercase;
 					line-height: 27px;
 
@@ -375,10 +345,8 @@ div.side {
 
 		/* Link & community buttons */
 		div.morelink {
-			border: none;
-			border-left: 6px solid $dark;
+			@include bordered-box($dark, $darker, $lightest);
 			text-align: left;
-			background-color: $darker;
 			background-image: none;
 			height: 31px;
 			font-weight: normal;
@@ -391,9 +359,7 @@ div.side {
 			}
 			
 			&:hover {
-				background-image: none;
-				border-left: 6px solid $accent-light;
-				background-color: $lightest;
+				@include bordered-box($accent-light, $lightest, $darker);
 	
 				a {
 					color: $darker;
