@@ -39,122 +39,114 @@ div.side {
 			display: none;
 		}		
 		
-	/* Subreddit name */
-	div.redditname {
+		/* Subreddit name */
+		div.redditname a:before {
+			content: "/r/";			
+		}
+		
+		/* Subscribe button */
+		span.fancy-toggle-button {
+			
+			/* General style */
+			a.option {
+				width: 278px;
+				text-align: left;
+				margin: 0;
+				padding: 4px 8px 6px 8px;
+				line-height: 14px;
+				height: 14px;
+				background-image: none;
+				font-weight: normal;
+				font-size: 12px;
+				border: none;
+				border-radius: 0;
+				-moz-border-radius: 0;
+				-webkit-border-radius: 0;
+			
+				&:first-letter {
+					letter-spacing: .5em;
+				}
+				
+				&.active {
+					display: inline-block;
+				}
 
-		a {
+			}
+			
+			/* If unsubscribed */
+			a.add {
+				color: $lightest;
+				background-color: $darker;
+				border-left: 6px solid $dark;
+			
+				&:before {
+					content: "+";
+				}
+			
+				&:hover {
+					color: $accent-light;
+				}
+				
+			}
+		
+			/* If subscribed */
+			a.remove {
+				color: $darker;
+				background-color: $lightest;
+				border-left: 6px solid $accent-light;
+			
+				&:before {
+					content: "-";
+				}
+		
+				&:hover {
+					color: $accent-dark;
+				}
+		
+			}
+			
+		}
+		
+		/* Subscriber count */
+		span.subscribers {
+			line-height: 25px;
+			padding: 0px 2px 0px 0px;
+			clear: both;
+			float: none;
+				
+			span.number {
+				font-size: 15px;
+				font-weight: bold;			
+			}
+				
+		}
+		
+		/* Online user count */
+		p.users-online {
+			display: inline;
+			line-height: 25px;
+			padding: 5px;
 
+			span.number {
+				font-size: 15px;
+				font-weight: bold;
+
+				&:before {
+					content: "/ ";
+					background: none !important;
+				}
+		
+			}
+				
+			/* Remove obnoxious green circle */
 			&:before {
-				content: "/r/";
+				background: none;
+				width: auto;
 			}
+				
+		}
 
-		}
-			
-	}
-		
-	/* Subscribe button */
-	span.fancy-toggle-button {
-			
-		/* General style */
-		a.option {
-			width: 278px;
-			text-align: left;
-			margin: 0;
-			padding: 4px 8px 6px 8px;
-			line-height: 14px;
-			height: 14px;
-			background-image: none;
-			font-weight: normal;
-			font-size: 12px;
-			border: none;
-			border-radius: 0;
-			-moz-border-radius: 0;
-			-webkit-border-radius: 0;
-		
-			&:first-letter {
-				letter-spacing: .5em;
-			}
-			
-			&.active {
-				display: inline-block;
-			}
-
-		}
-		
-		/* If unsubscribed */
-		a.add {
-			color: $lightest;
-			background-color: $darker;
-			border-left: 6px solid $dark;
-		
-			&:before {
-				content: "+";
-			}
-		
-			&:hover {
-				color: $accent-light;
-			}
-			
-		}
-		
-		/* If subscribed */
-		a.remove {
-			color: $darker;
-			background-color: $lightest;
-			border-left: 6px solid $accent-light;
-		
-			&:before {
-				content: "-";
-			}
-	
-			&:hover {
-				color: $accent-dark;
-			}
-	
-		}
-			
-	}
-		
-	/* Subscriber count */
-	span.subscribers {
-		line-height: 25px;
-		padding: 0px 2px 0px 0px;
-		clear: both;
-		float: none;
-			
-		span.number {
-			font-size: 15px;
-			font-weight: bold;			
-		}
-			
-	}
-		
-	/* Online user count */
-	p.users-online {
-		display: inline;
-		line-height: 25px;
-		padding: 5px;
-
-		span.number {
-			font-size: 15px;
-			font-weight: bold;
-
-			&:before {
-				content: "/ ";
-				background: none !important;
-			}
-	
-		}
-			
-		/* Remove obnoxious green circle */
-		&:before {
-			background: none;
-			width: auto;
-		}
-			
-	}
-
-		 /* Moderator box */
+		/* Moderator box */
 		div.leavemoderator {
 			color: $darker;
 			background: $lightest;
