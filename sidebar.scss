@@ -196,28 +196,32 @@ div.side {
 				overflow: hidden !important;
 	
 				/* Announcement bar */
-				table {
-					width: 100%;
-					position: absolute;
-					top: 127px;
-					left: 0px;
-					
-					th {
-						background-color: $lightest;
-						color: $darker;
-						margin: 15px;
-						padding: 7px 7px 7px 13px;
-						border-left: 6px solid $dark;
-						font-weight: normal;
-						text-align: left;
-						line-height: 15px;
-					}
-					
-					th+th {
-						width: 320px;
-						border: none;
-						padding: 0px;
-						background: none;
+				blockquote {
+				
+					table {
+						width: 100%;
+						position: absolute;
+						top: 127px;
+						left: 0px;
+						
+						th {
+							background-color: $lightest;
+							color: $darker;
+							margin: 15px;
+							padding: 7px 7px 7px 13px;
+							border-left: 6px solid $dark;
+							font-weight: normal;
+							text-align: left;
+							line-height: 15px;
+						}
+						
+						th+th {
+							width: 320px;
+							border: none;
+							padding: 0px;
+							background: none;
+						}
+						
 					}
 					
 				}
