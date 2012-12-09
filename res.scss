@@ -1,63 +1,63 @@
 /* Style shortcut & dashboard buttons to be consistent with subscribe */
 
 .RESshortcutside, .RESDashboardToggle {
-    margin: 0 !important;
-    text-align: left !important;
-    letter-spacing: 0 !important;
-    line-height: 14px !important;
-    height: 14px !important;
-    width: 278px !important;
-    font-weight: 300 !important;
-    font-size: 13px !important;
-    background-image: none !important;
-    background-color: $darker !important;
-    border: none !important;
-    border-left: 6px solid $dark !important;
-    border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
-    -webkit-border-radius: 0 !important;
-    display: block !important;
-    color: $lightest !important;
-    position: relative !important;
-    padding: 4px 8px 6px 8px !important;
-    margin-bottom: 5px !important;
-    
-    &:first-letter {
-      letter-spacing: .5em;
-    }
-    
-    &:hover {
-      color: $accent-light !important;
-    }
-    
-    &.remove {
-      background-image: none !important;
-      color: $darker !important;
-      background-color: $lightest !important;
-      border-left: 6px solid $accent-light !important;
-      
-      &:hover {
-	color: $accent-dark !important;
-      }
-      
-    }
-    
+	margin: 0 !important;
+	text-align: left !important;
+	letter-spacing: 0 !important;
+	line-height: 14px !important;
+	height: 14px !important;
+	width: 278px !important;
+	font-weight: 300 !important;
+	font-size: 13px !important;
+	background-image: none !important;
+	background-color: $darker !important;
+	border: none !important;
+	border-left: 6px solid $dark !important;
+	border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	display: block !important;
+	color: $lightest !important;
+	position: relative !important;
+	padding: 4px 8px 6px 8px !important;
+	margin-bottom: 5px !important;
+	
+	&:first-letter {
+		letter-spacing: .5em;
+	}
+	
+	&:hover {
+		color: $accent-light !important;
+	}
+	
+	&.remove {
+		background-image: none !important;
+		color: $darker !important;
+		background-color: $lightest !important;
+		border-left: 6px solid $accent-light !important;
+	  
+		&:hover {
+			color: $accent-dark !important;
+		}
+	  
+	}
+	
 }
 
 /* Change new comments notification color */
 div.entry span.newComments {
-  color: $alert-dark;
+	color: $alert-dark;
 }
 
 /* Selected link & comment styles */
 .keyHighlight {
-  background-color: $lightest !important;
-  outline: none !important;
-  border: none !important;
+	background-color: $lightest !important;
+	outline: none !important;
+	border: none !important;
 }
 
 /* Get rid of border around the last clicked link */
 .last-clicked {
-  outline: none !important;
-  border: none !important;
+	outline: none !important;
+	border: none !important;
 }

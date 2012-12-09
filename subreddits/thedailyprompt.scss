@@ -14,11 +14,11 @@ $alert-dark:   #FF8800;
 @import "../common";
 
 .pagename, .pagename a {
- color: $lightest;
- font-size: 24px;
+	color: $lightest;
+	font-size: 24px;
 }
 
 /* Highlight prompt suggestion threads */
 div#siteTable div.thing div.entry p.title a.title[href*="the_daily_prompt_suggestions_for"] {
-  color: $accent-dark !important;
+	color: $accent-dark !important;
 }

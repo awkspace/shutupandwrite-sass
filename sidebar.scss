@@ -1,434 +1,420 @@
 div.side {
 
-  /* Search box */
-  form#search {
-    
-    /* Overlap the second invisible table cell of announcement bar */
-    position: relative;
-    z-index: 1;
-    
-    input {
-      text-align: center;
-    }
-    
-  }
-  
-  /* Post info */
-  div.linkinfo {
-    background-color: $lightest;
-    border: none;
-    border-left: 6px solid $light;
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    
-    .upvotes {
-      color: $accent-dark;
-    }
-    
-    .downvotes {
-      color: $darker;
-    }
-    
-  }
-  
-  div.titlebox {
+	/* Search box */
+	form#search {
 
-    /* Hide horizontal breaks */
-    hr {
-      display: none;
-    }    
-    
-    /* Subreddit name */
-    div.redditname {
-
-      a {
-
-	&:before {
-	  content: "/r/";
-	}
-
-      }
-      
-    }
-    
-    /* Subscribe button */
-    span.fancy-toggle-button {
-      
-      /* General style */
-      a.option {
-	width: 278px;
-	text-align: left;
-	margin: 0;
-	padding: 4px 8px 6px 8px;
-	line-height: 14px;
-	height: 14px;
-	background-image: none;
-	font-weight: normal;
-	font-size: 12px;
-	border: none;
-	border-radius: 0;
-	-moz-border-radius: 0;
-	-webkit-border-radius: 0;
-	
-	&:first-letter {
-	  letter-spacing: .5em;
-	}
-	
-	&.active {
-	  display: inline-block;
-	}
-	
-      }
-      
-      /* If unsubscribed */
-      a.add {
-	color: $lightest;
-	background-color: $darker;
-	border-left: 6px solid $dark;
-	
-	&:before {
-	  content: "+";
-	}
-	
-	&:hover {
-	  color: $accent-light;
-	}
+		/* Overlap the second invisible table cell of announcement bar */
+		position: relative;
+		z-index: 1;
 		
-      }
-      
-      /* If subscribed */
-      a.remove {
-	color: $darker;
-	background-color: $lightest;
-	border-left: 6px solid $accent-light;
-	
-	&:before {
-	  content: "-";
-	}
-  
-  	&:hover {
-	  color: $accent-dark;
-	}
-  
-      }
-      
-    }
-    
-    /* Subscriber count */
-    span.subscribers {
-      line-height: 25px;
-      padding: 0px 2px 0px 0px;
-      clear: both;
-      float: none;
-      
-      span.number {
-	font-size: 15px;
-	font-weight: bold;      
-      }
-      
-    }
-    
-    /* Online user count */
-    p.users-online {
-      display: inline;
-      line-height: 25px;
-      padding: 5px;
-
-      span.number {
-	font-size: 15px;
-	font-weight: bold;
-
-	&:before {
-	  content: "/ ";
-	  background: none !important;
-	}
-	
-      }
-      
-      /* Remove obnoxious green circle */
-      &:before {
-	background: none;
-	width: auto;
-      }
-      
-    }
-
-     /* Moderator box */
-    div.leavemoderator {
-      color: $darker;
-      background: $lightest;
-      border-left: 6px solid $accent-light;
-      padding: 5px 0px 5px 5px;
-      margin-bottom: 5px;
-      line-height: 10px;
-      
-      &:before {
-	display: none;
-      }
-      
-    }
-    
-    /* Flair toggle box */
-    form.flairtoggle {
-      color: $darker;
-      background: $lightest;
-      border-left: 6px solid $accent-light;
-      padding: 5px 0px 5px 5px;
-      line-height: 10px;
-    }
-    
-    /* Flair preview box */
-    div.tagline {
-      background: $lightest;
-      border-left: 6px solid $accent-light;
-      padding: 5px 0px 5px 5px;
-      margin: 0px;
-      margin-bottom: 7px;
-      line-height: 10px;
-    }
-    
-    /* Main sidebar */
-    div.usertext-body {
-      
-      .md {
-	/* fixme */
-	overflow: hidden !important;
-	
-	/* Announcement bar */
-	table {
-	  width: 100%;
-	  position: absolute;
-	  top: 127px;
-	  left: 0px;
-	  
-	  th {
-	  background-color: $lightest;
-	    color: $darker;
-	    margin: 15px;
-	    padding: 7px 7px 7px 13px;
-	    border-left: 6px solid $dark;
-	    font-weight: normal;
-	    text-align: left;
-	    line-height: 15px;
-	  }
-	  
-	  th+th {
-	    width: 320px;
-	    border: none;
-	    padding: 0px;
-	    background: none;
-	  }
-	  
-	}
-	
-	/* Categories v1.0 */
-	h3 {
-	  font-family: 'DejaVu Sans', 'Arial', sans-serif;
-	  display: block;
-	  position: absolute;
-	  top: 40px;
-	  left: 310px;
-	  background-color: $lightest;
-	  z-index: 99;
-	  padding: 7px;
-	  font-weight: normal;
-	  box-shadow: 0px 0px 10px $accent-light;
-	}
-	
-	/* Lists */
-	ul {
-	  margin: 0 0 7px 0;
-	  line-height: 20px;
-	    
-	  li {
-	    width: 274px;
-	    background-color: $lightest;
-	    border: none;
-	    color: black;
-	    display: none;
-	    padding: 7px 7px 9px 13px;
-	    margin: 0 0 -1px 0;
-	    text-align: left;
-	    border-top: 1px solid lighten($light, 10%);
-	    border-left: 6px solid $lighter;
-	    line-height: 16px;
-
-	    &:hover {
-	      background-color: $lighter;
-	    }
-	    
-	    a:hover {
-	      color: black;
-	    }
-	    
-	    &:first-child {
-	      background-color: $darker;
-	      color: $lightest;
-	      display: inline-block;
-	      border-left: 6px solid $dark;
-	      border-top: none;
-	      font-size: 15px;
-	      padding: 8px 12px 9px 8px;
-
-	      strong {
-		font-weight: normal;
-	      }
-	      
-	      &:hover {
-		border-left: 6px solid $accent-light;
-		background-color: $lightest;
-		color: $darker;
-		
-		a {
-		  color: #336699;
+		input {
+			text-align: center;
 		}
 		
-	      }
-	      
-	      a {
-		color: $lightest;
-	      }
-	      
-	    }
-	    
-	  }
-	  
-	  /* Make lists pop out when hovered over */
-	  &:hover > li {
-	    display: block;
-	  }	
-	  
 	}
 	
-	/* Lists - forced open for visibility */
-	blockquote {
-	  border: none;
-	  margin: 0px;
-	  padding: 0px;
-	  
-	  & > ul > li {
-	    display: block;
-	  }
-	  
+	/* Post info */
+	div.linkinfo {
+		background-color: $lightest;
+		border: none;
+		border-left: 6px solid $light;
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+		
+		.upvotes {
+			color: $accent-dark;
+		}
+		
+		.downvotes {
+			color: $darker;
+		}
+		
 	}
 	
-      }
-      
-    }
-    
-  }
+	div.titlebox {
 
-  /* Content below main sidebar */
-  div.spacer {
-   
-    div.sidecontentbox {
+		/* Hide horizontal breaks */
+		hr {
+			display: none;
+		}		
+		
+	/* Subreddit name */
+	div.redditname {
 
-      div.title {
-	
-	h1 {
-	  display: inline-block;
-	  width: 284px;
-	  border-left: 6px solid $dark;
-	  text-align: left;
-	  background-color: $darker;
-	  font-size: 15px;
-	  letter-spacing: 0px;
-	  padding: 2px;
-	  padding-left: 8px;
-	  color: $lightest;
-	  text-transform: lowercase;
-	  line-height: 27px;
+		a {
 
-	  &:first-letter {
-	    text-transform: uppercase;
-	  }
-	  
-	}
-	
-      }
-    
-      &.collapsible {
-	
-	div.title {
+			&:before {
+				content: "/r/";
+			}
 
-	  span.collapse-button {
-	    display: none;
-	  }
-	  
+		}
+			
 	}
-	
-      }
-      
-      ul.content {
-	padding: 5px;
-	border: none;
-	background-color: $lightest;
-	
-	ul.icon-menu {
+		
+	/* Subscribe button */
+	span.fancy-toggle-button {
+			
+		/* General style */
+		a.option {
+			width: 278px;
+			text-align: left;
+			margin: 0;
+			padding: 4px 8px 6px 8px;
+			line-height: 14px;
+			height: 14px;
+			background-image: none;
+			font-weight: normal;
+			font-size: 12px;
+			border: none;
+			border-radius: 0;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+		
+			&:first-letter {
+			letter-spacing: .5em;
+			}
+			
+			&.active {
+			display: inline-block;
+			}
 
-	  a {
-	    background: transparent;
-	  }
-	  
-	}
+		}
+		
+		/* If unsubscribed */
+		a.add {
+			color: $lightest;
+			background-color: $darker;
+			border-left: 6px solid $dark;
+		
+			&:before {
+				content: "+";
+			}
+		
+			&:hover {
+				color: $accent-light;
+			}
+			
+		}
+		
+		/* If subscribed */
+		a.remove {
+			color: $darker;
+			background-color: $lightest;
+			border-left: 6px solid $accent-light;
+		
+			&:before {
+				content: "-";
+			}
 	
-      }
-      
-      a.helplink {
-	color: $light !important;
-	position: relative;
-	top: 22px;
-	right: 6px;
-	padding-left: 4px;
+			&:hover {
+				color: $accent-dark;
+			}
 	
-	&:hover {
-	  color: $lightest !important;
-	  border-left: 4px solid $accent-light;
+		}
+			
 	}
+		
+	/* Subscriber count */
+	span.subscribers {
+		line-height: 25px;
+		padding: 0px 2px 0px 0px;
+		clear: both;
+		float: none;
+			
+		span.number {
+			font-size: 15px;
+			font-weight: bold;			
+		}
+			
+	}
+		
+	/* Online user count */
+	p.users-online {
+		display: inline;
+		line-height: 25px;
+		padding: 5px;
+
+		span.number {
+			font-size: 15px;
+			font-weight: bold;
+
+			&:before {
+				content: "/ ";
+				background: none !important;
+			}
+	
+		}
+			
+		/* Remove obnoxious green circle */
+		&:before {
+			background: none;
+			width: auto;
+		}
+			
+	}
+
+		 /* Moderator box */
+		div.leavemoderator {
+			color: $darker;
+			background: $lightest;
+			border-left: 6px solid $accent-light;
+			padding: 5px 0px 5px 5px;
+			margin-bottom: 5px;
+			line-height: 10px;
+			
+			&:before {
+				display: none;
+			}
+			
+		}
+		
+		/* Flair toggle box */
+		form.flairtoggle {
+			color: $darker;
+			background: $lightest;
+			border-left: 6px solid $accent-light;
+			padding: 5px 0px 5px 5px;
+			line-height: 10px;
+		}
+		
+		/* Flair preview box */
+		div.tagline {
+			background: $lightest;
+			border-left: 6px solid $accent-light;
+			padding: 5px 0px 5px 5px;
+			margin: 0px;
+			margin-bottom: 7px;
+			line-height: 10px;
+		}
+		
+		/* Main sidebar */
+		div.usertext-body {
+			
+			.md {
+				/* fixme */
+				overflow: hidden !important;
+	
+				/* Announcement bar */
+				table {
+					width: 100%;
+					position: absolute;
+					top: 127px;
+					left: 0px;
+					
+					th {
+					background-color: $lightest;
+						color: $darker;
+						margin: 15px;
+						padding: 7px 7px 7px 13px;
+						border-left: 6px solid $dark;
+						font-weight: normal;
+						text-align: left;
+						line-height: 15px;
+					}
+					
+					th+th {
+						width: 320px;
+						border: none;
+						padding: 0px;
+						background: none;
+					}
+					
+				}
+				
+				/* Lists */
+				ul {
+					margin: 0 0 7px 0;
+					line-height: 20px;
+						
+					li {
+						width: 274px;
+						background-color: $lightest;
+						border: none;
+						color: black;
+						display: none;
+						padding: 7px 7px 9px 13px;
+						margin: 0 0 -1px 0;
+						text-align: left;
+						border-top: 1px solid lighten($light, 10%);
+						border-left: 6px solid $lighter;
+						line-height: 16px;
+
+						&:hover {
+							background-color: $lighter;
+						}
+						
+						a:hover {
+							color: black;
+						}
+						
+						&:first-child {
+							background-color: $darker;
+							color: $lightest;
+							display: inline-block;
+							border-left: 6px solid $dark;
+							border-top: none;
+							font-size: 15px;
+							padding: 8px 12px 9px 8px;
+
+							strong {
+								font-weight: normal;
+							}
+							
+							&:hover {
+								border-left: 6px solid $accent-light;
+								background-color: $lightest;
+								color: $darker;
+					
+								a {
+									color: #336699;
+								}
+					
+							}
+							
+							a {
+								color: $lightest;
+							}
+							
+						}
+						
+					}
+					
+					/* Make lists pop out when hovered over */
+					&:hover > li {
+						display: block;
+					}	
+					
+				}
+				
+				/* Lists - forced open for visibility */
+				blockquote {
+					border: none;
+					margin: 0px;
+					padding: 0px;
+					
+					& > ul > li {
+						display: block;
+					}
+					
+				}
+	
+			}
+			
+		}
+		
+	}
+
+	/* Content below main sidebar */
+	div.spacer {
 	 
-      }
-           
-    }
+		div.sidecontentbox {
 
-    /* Link & community buttons */
-    div.morelink {
-      border: none;
-      border-left: 6px solid $dark;
-      text-align: left;
-      background-color: $darker;
-      background-image: none;
-      height: 31px;
-      font-weight: normal;
-      
-      a {
-	letter-spacing: 0px;
-	padding-left: 8px;
-	color: $lightest;
-	width: 280px !important;
-      }
-      
-      &:hover {
-	background-image: none;
-	border-left: 6px solid $accent-light;
-	background-color: $lightest;
+			div.title {
 	
-	a {
-	  color: $darker;
+				h1 {
+					display: inline-block;
+					width: 284px;
+					border-left: 6px solid $dark;
+					text-align: left;
+					background-color: $darker;
+					font-size: 15px;
+					letter-spacing: 0px;
+					padding: 2px;
+					padding-left: 8px;
+					color: $lightest;
+					text-transform: lowercase;
+					line-height: 27px;
+
+					&:first-letter {
+						text-transform: uppercase;
+					}
+					
+				}
+	
+			}
+		
+			&.collapsible {
+	
+				div.title {
+
+					span.collapse-button {
+						display: none;
+					}
+			
+				}
+	
+			}
+			
+			ul.content {
+				padding: 5px;
+				border: none;
+				background-color: $lightest;
+	
+				ul.icon-menu {
+
+					a {
+						background: transparent;
+					}
+		
+				}
+	
+			}
+			
+			a.helplink {
+				color: $light !important;
+				position: relative;
+				top: 22px;
+				right: 6px;
+				padding-left: 4px;
+	
+				&:hover {
+					color: $lightest !important;
+					border-left: 4px solid $accent-light;
+				}
+	 
+			}
+					 
+		}
+
+		/* Link & community buttons */
+		div.morelink {
+			border: none;
+			border-left: 6px solid $dark;
+			text-align: left;
+			background-color: $darker;
+			background-image: none;
+			height: 31px;
+			font-weight: normal;
+			
+			a {
+				letter-spacing: 0px;
+				padding-left: 8px;
+				color: $lightest;
+				width: 280px !important;
+			}
+			
+			&:hover {
+				background-image: none;
+				border-left: 6px solid $accent-light;
+				background-color: $lightest;
+	
+				a {
+					color: $darker;
+				}
+	
+			}
+			
+			div.nub {
+				display: none;
+			}
+			
+			& ~ div.spacer {
+				display: none;
+			}
+						
+		}
+		
 	}
 	
-      }
-      
-      div.nub {
-	display: none;
-      }
-      
-      & ~ div.spacer {
-	display: none;
-      }
-            
-    }
-    
-  }
-  
 }

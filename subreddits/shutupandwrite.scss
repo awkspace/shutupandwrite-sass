@@ -14,23 +14,23 @@ $alert-dark:   #FF8800;
 @import "../common";
 
 div#header-bottom-left {
-  background-color: #0F0F0F;
+	background-color: #0F0F0F;
 }
 
 /* Hide "shutupandwrite" */
 .pagename {
-  visibility: hidden;
+	visibility: hidden;
 }
 
 /* Preserve subreddit link as overlay */
 .pagename a {
-  display: block;
-  position: absolute;
-  bottom: 1px;
-  left: 100px;
-  visibility: visible;
-  color: $light;
-  font-size: 1px !important;
-  width: 190px !important;
-  height: 150px !important;
+	display: block;
+	position: absolute;
+	bottom: 1px;
+	left: 100px;
+	visibility: visible;
+	color: $light;
+	font-size: 1px !important;
+	width: 190px !important;
+	height: 150px !important;
 }

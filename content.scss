@@ -1,43 +1,43 @@
 div.content {
-  margin-top: 50px;
+	margin-top: 50px;
 }
 
 div#siteTable {
 
-  div.thing {
+	div.thing {
 
-    div.entry {
-    
-      p.title {
+		div.entry {
+		
+			p.title {
 
-	/* Link flair */
-	span.linkflairlabel {
-	  width: 80px;
-	  background: $lighter;
-	  color: $darker;
-	  text-align: center;
-	  padding: 2px;
-	  border: none;
-	  -moz-border-radius: 0px;
-	  -webkit-border-radius: 0px;
-	  border-radius: 0px;
-	  vertical-align: bottom;      
+				/* Link flair */
+				span.linkflairlabel {
+					width: 80px;
+					background: $lighter;
+					color: $darker;
+					text-align: center;
+					padding: 2px;
+					border: none;
+					-moz-border-radius: 0px;
+					-webkit-border-radius: 0px;
+					border-radius: 0px;
+					vertical-align: bottom;			
+				}
+				
+				/* Change link color */
+				a.title {
+					color: #336699;
+				}
+				
+				/* Change visited link color */
+				a.title:visited {
+					color: $darker;
+				}
+			
+			}
+			
+		}
+		
 	}
-	
-	/* Change link color */
-	a.title {
-	  color: #336699;
-	}
-	
-	/* Change visited link color */
-	a.title:visited {
-	  color: $darker;
-	}
-      
-      }
-      
-    }
-    
-  }
 
 }
