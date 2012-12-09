@@ -1,0 +1,20 @@
+$theme:        light;
+
+$light:        #AAAAAA;
+$lighter:      #DDDDDD;
+$lightest:     #F2F2F2;
+
+$dark:         #808080;
+$darker:       #333333;
+$darkest:      #0F0F0F;
+
+$accent-light: #FF4444;
+$accent-dark:  #CC0000;
+
+$alert-dark:   #FF8800;
+
+@import "../common";
+
+.pagename, .pagename a {
+	font-size: 24px;
+}

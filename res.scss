@@ -1,6 +1,6 @@
 /* Style shortcut & dashboard buttons to be consistent with subscribe */
 
-.RESshortcutside, .RESDashboardToggle {
+.RESshortcutside, .RESDashboardToggle {	
 	margin: 0 !important;
 	text-align: left !important;
 	letter-spacing: 0 !important;
@@ -9,32 +9,31 @@
 	width: 278px !important;
 	font-weight: 300 !important;
 	font-size: 13px !important;
-	background-image: none !important;
-	background-color: $darker !important;
-	border: none !important;
-	border-left: 6px solid $dark !important;
-	border-radius: 0 !important;
-	-moz-border-radius: 0 !important;
-	-webkit-border-radius: 0 !important;
 	display: block !important;
-	color: $lightest !important;
 	position: relative !important;
 	padding: 4px 8px 6px 8px !important;
 	margin-bottom: 5px !important;
+	
+	@if $theme == light {
+		@include bordered-box-override($lighter, $lightest, $darker);
+	} @else {
+		@include bordered-box-override($dark, $darker, $lightest);
+	}
 	
 	&:first-letter {
 		letter-spacing: .5em;
 	}
 	
 	&:hover {
-		color: $accent-light !important;
+		@if $theme == light {
+			color: $accent-dark !important;
+		} @else {
+			color: $accent-light !important;
+		}
 	}
 	
 	&.remove {
-		background-image: none !important;
-		color: $darker !important;
-		background-color: $lightest !important;
-		border-left: 6px solid $accent-light !important;
+		@include bordered-box-override($accent-light, $lightest, $darker);
 	  
 		&:hover {
 			color: $accent-dark !important;

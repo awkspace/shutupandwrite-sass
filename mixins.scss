@@ -12,3 +12,19 @@
 	color: $color;
 	@include no-rounded-corners;
 }
+
+/* For use as RES overrides */
+@mixin no-rounded-corners-override {
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+
+@mixin bordered-box-override($border, $background, $color) {
+	background-image: none !important;
+	background-color: $background !important;
+	border: none !important;
+	border-left: 6px solid $border !important;
+	color: $color !important;
+	@include no-rounded-corners-override;
+}

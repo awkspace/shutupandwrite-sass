@@ -44,7 +44,12 @@ div.side {
 			
 			/* General style */
 			a.option {
-				@include bordered-box($dark, $darker, $lightest);
+				@if $theme == light {
+					@include bordered-box($light, $lightest, $darker);
+				} @else {
+					@include bordered-box($dark, $darker, $lightest);
+				}
+				
 				width: 278px;
 				text-align: left;
 				margin: 0;
@@ -72,7 +77,11 @@ div.side {
 				}
 			
 				&:hover {
-					color: $accent-light;
+					@if $theme == light {
+						color: $accent-dark;
+					} @else {
+						color: $accent-light;
+					}
 				}
 				
 			}
@@ -132,9 +141,9 @@ div.side {
 				
 		}
 
-		/* Moderator box */
-		div.leavemoderator {
-			@include bordered-box($accent-light, $lightest, $darker);
+		/* Moderator and approved submitter boxes */
+		div.leavemoderator, form.leavecontributor-button {
+			@include bordered-box($accent-light, $lightest, $darker);			
 			padding: 5px 0px 5px 5px;
 			margin-bottom: 5px;
 			line-height: 10px;
@@ -144,7 +153,7 @@ div.side {
 			}
 			
 		}
-		
+				
 		/* Flair toggle box */
 		form.flairtoggle {
 			@include bordered-box($accent-light, $lightest, $darker);
@@ -222,7 +231,13 @@ div.side {
 						}
 						
 						&:first-child {
-							@include bordered-box($dark, $darker, $lightest);
+
+							@if $theme == light {
+								@include bordered-box($light, $lightest, $darker);
+							} @else {
+								@include bordered-box($dark, $darker, $lightest);
+							}
+							
 							display: inline-block;
 							font-size: 15px;
 							padding: 8px 12px 9px 8px;
@@ -281,7 +296,13 @@ div.side {
 			div.title {
 	
 				h1 {
-					@include bordered-box($dark, $darker, $lightest);
+				
+					@if $theme == light {
+						@include bordered-box($lighter, $lightest, $darker);
+					} @else {
+						@include bordered-box($dark, $darker, $lightest);
+					}
+					
 					display: inline-block;
 					width: 284px;
 					text-align: left;
@@ -328,15 +349,28 @@ div.side {
 			}
 			
 			a.helplink {
-				color: $light !important;
+			
+				@if $theme == light {
+					color: $dark !important;
+				} @else {
+					color: $light !important;
+				}
+				
 				position: relative;
 				top: 22px;
 				right: 6px;
 				padding-left: 4px;
 	
 				&:hover {
-					color: $lightest !important;
-					border-left: 4px solid $accent-light;
+				
+					@if $theme == light {
+						color: $darkest !important;
+						border-left: 4px solid $accent-dark;
+					} @else {
+						color: $lightest !important;
+						border-left: 4px solid $accent-light;
+					}
+					
 				}
 	 
 			}
@@ -345,16 +379,28 @@ div.side {
 
 		/* Link & community buttons */
 		div.morelink {
-			@include bordered-box($dark, $darker, $lightest);
+		
+			@if $theme == light {
+				@include bordered-box($lighter, $lightest, $darker);
+			} @else {
+				@include bordered-box($dark, $darker, $lightest);
+			}
+
 			text-align: left;
 			background-image: none;
 			height: 31px;
 			font-weight: normal;
 			
 			a {
+				
+				@if $theme == light {
+					color: $darker;
+				} @else {
+					color: $lightest;
+				}
+				
 				letter-spacing: 0px;
 				padding-left: 8px;
-				color: $lightest;
 				width: 280px !important;
 			}
 			
