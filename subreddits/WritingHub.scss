@@ -36,14 +36,17 @@ div.usertext-body div.md {
 	table {
 		margin-left: 0px;
 		width: 100%;
-				
+		
 		th {
 			background: $lighter;
-			border: 1px solid $light;
+			border: none;
+			padding: 3px;
 		}
 		
 		td {
-			border: 1px solid $lighter;
+			background: $lightest;
+			border: none;
+			padding: 3px;
 		}
 	
 	}

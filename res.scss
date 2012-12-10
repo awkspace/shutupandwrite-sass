@@ -15,7 +15,7 @@
 	margin-bottom: 5px !important;
 	
 	@if $theme == light {
-		@include bordered-box-override($lighter, $lightest, $darker);
+		@include bordered-box-override($light, $lightest, $darker);
 	} @else {
 		@include bordered-box-override($dark, $darker, $lightest);
 	}
