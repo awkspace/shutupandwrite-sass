@@ -188,13 +188,7 @@ div.side {
 						margin: 5px 10px;
 						
 						th {
-						
-							@if $theme == light {
-								@include bordered-box($dark, $lighter, $darker);
-							} @else {
-								@include bordered-box($dark, $lightest, $darker);
-							}
-							
+							@include bordered-box($dark, $lightest, $darker);							
 							margin: 15px;
 							padding: 7px 7px 7px 13px;
 							font-weight: normal;
