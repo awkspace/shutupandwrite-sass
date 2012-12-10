@@ -185,6 +185,7 @@ div.side {
 						position: absolute;
 						top: 127px;
 						left: 0px;
+						margin: 5px 10px;
 						
 						th {
 							@include bordered-box($dark, $lightest, $darker);
