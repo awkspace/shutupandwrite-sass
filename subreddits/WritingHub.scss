@@ -48,7 +48,11 @@ div.usertext-body div.md {
 			border: none;
 			padding: 5px;
 		}
-			
+		
+		tr:hover td {
+			background: mix($lighter, $lightest);
+		}
+		
 	}
 
 }
