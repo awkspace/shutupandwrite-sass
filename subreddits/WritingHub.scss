@@ -24,10 +24,19 @@ $alert-dark:   #FF8800;
 
 div.usertext-body div.md {
 
+	h3 {
+		margin-top:1.5em;
+		
+		&:first-of-type {
+			margin-top: 1em;
+		}
+	
+	}
+
 	table {
 		margin-left: 0px;
 		width: 100%;
-		
+				
 		th {
 			background: $lightest;
 			border: 1px solid $lighter;
