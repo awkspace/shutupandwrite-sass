@@ -18,3 +18,25 @@ $alert-dark:   #FF8800;
 .pagename, .pagename a {
 	font-size: 24px;
 }
+
+/* Custom tables for sidebar
+(This may be something to work into the overall stylesheet) */
+
+div.usertext-body div.md {
+
+	table {
+		margin-left: 0px;
+		width: 100%;
+		
+		th {
+			background: $lightest;
+			border: 1px solid $lighter;
+		}
+		
+		td {
+			border: 1px solid $lighter;
+		}
+	
+	}
+
+}
