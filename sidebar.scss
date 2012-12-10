@@ -143,7 +143,7 @@ div.side {
 
 		/* Moderator and approved submitter boxes */
 		div.leavemoderator, form.leavecontributor-button {
-			@include bordered-box($accent-light, $lightest, $darker);			
+			@include bordered-box($accent-light, $lightest, $darker);
 			padding: 5px 0px 5px 5px;
 			margin-bottom: 5px;
 			line-height: 10px;
@@ -188,7 +188,13 @@ div.side {
 						margin: 5px 10px;
 						
 						th {
-							@include bordered-box($dark, $lightest, $darker);
+						
+							@if $theme == light {
+								@include bordered-box($dark, $lighter, $darker);
+							} @else {
+								@include bordered-box($dark, $lightest, $darker);
+							}
+							
 							margin: 15px;
 							padding: 7px 7px 7px 13px;
 							font-weight: normal;
@@ -234,7 +240,7 @@ div.side {
 						&:first-child {
 
 							@if $theme == light {
-								@include bordered-box($light, $lightest, $darker);
+								@include bordered-box($dark, $lighter, $darker);
 							} @else {
 								@include bordered-box($dark, $darker, $lightest);
 							}
@@ -299,7 +305,7 @@ div.side {
 				h1 {
 				
 					@if $theme == light {
-						@include bordered-box($lighter, $lightest, $darker);
+						@include bordered-box($dark, $lighter, $darker);
 					} @else {
 						@include bordered-box($dark, $darker, $lightest);
 					}
@@ -382,7 +388,7 @@ div.side {
 		div.morelink {
 		
 			@if $theme == light {
-				@include bordered-box($lighter, $lightest, $darker);
+				@include bordered-box($dark, $lighter, $darker);
 			} @else {
 				@include bordered-box($dark, $darker, $lightest);
 			}

@@ -1,7 +1,7 @@
 div#header-bottom-left {
 	/* Set header background */
 	@if $theme == light {
-		background-color: $lightest;
+		background-color: $lighter;
 	} @else {
 		background-color: $darkest;
 	}
@@ -35,7 +35,7 @@ div#header {
 				@if $theme == light {
 					color: $darkest;
 				} @else {
-					color: $lightest;
+					color: $lighter;
 				}
 				
 				&:hover {
@@ -54,7 +54,7 @@ div#header {
 				@if $theme == light {
 					color: $darkest;
 				} @else {
-					color: $lightest;
+					color: $lighter;
 				}
 				
 			}
