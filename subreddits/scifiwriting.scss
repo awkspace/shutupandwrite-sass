@@ -1,3 +1,5 @@
+$theme:        dark;
+
 $light:        #AAAAAA;
 $lighter:      #DDDDDD;
 $lightest:     #F2F2F2;
@@ -70,7 +72,7 @@ input[name="uh"] ~ a::after,.user::before {
 	z-index:10;
 	content: " ";
 	top: 1px;
-	height: 100px;
+	height: 55px;
 }
 
 /* Make sure random quotes works for non-RES users */
