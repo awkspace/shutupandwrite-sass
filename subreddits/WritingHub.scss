@@ -33,6 +33,30 @@ div.usertext-body div.md {
 	
 	}
 	
+	table {
+
+		td {
+			width: 50%;
+		}
+
+		th+th {
+			text-align:right;
+		}
+
+		td+td {
+			width: 30%;
+		}
+
+		th+th+th {
+			text-align:center;
+		}
+
+		td+td+td {
+			width: 20%;
+		}
+	
+	}
+	
 }
 
 div.usertext-body div.md, div.wiki-page-content {
