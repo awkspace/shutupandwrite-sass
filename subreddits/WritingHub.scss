@@ -52,6 +52,16 @@ div.usertext-body div.md, div.wiki-page-content {
 			background: $lightest;
 			border: none;
 			padding: 5px;
+			
+			a[href*="redd.it"] {
+				width: 16px;
+				height: 16px;
+				margin: auto;
+				overflow: hidden;
+				display:block;
+				background-image:url(%%info-icon%%);
+			}
+			
 		}
 		
 		tr:hover td {
